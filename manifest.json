@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Savage Measurement",
+  "version": "9.1.1",
+  "description": "Picture measurement tool with automatic area percentage and line segmentation.",
+  "permissions": ["activeTab", "scripting", "storage", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["shortcutListener.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Savage Measurement (Alt+A)",
+    "default_icon": { "16": "images/icon16.png", "32": "images/icon32.png", "48": "images/icon48.png", "128": "images/icon128.png" }
+  },
+  "icons": {
+    "16": "images/icon16.png", "32": "images/icon32.png", "48": "images/icon48.png", "128": "images/icon128.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+A" },
+      "description": "Toggle Savage Measurement"
+    }
+  },
+  "web_accessible_resources": [{ "resources": ["images/*"], "matches": ["<all_urls>"] }]
+}
