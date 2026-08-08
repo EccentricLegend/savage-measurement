@@ -3,7 +3,7 @@
   "name": "Savage Measurement",
   "version": "9.1.1",
   "description": "Picture measurement tool with automatic area percentage and line segmentation.",
-  "permissions": ["activeTab", "scripting", "storage", "webNavigation"],
+  "permissions": ["activeTab", "scripting", "webNavigation"],
   "host_permissions": ["<all_urls>"],
   "background": { "service_worker": "background.js" },
   "content_scripts": [
