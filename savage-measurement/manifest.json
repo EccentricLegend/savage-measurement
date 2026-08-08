@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Savage Measurement",
-  "version": "9.1.1",
+  "version": "9.1.2",
   "description": "Picture measurement tool with automatic area percentage and line segmentation.",
   "permissions": ["activeTab", "scripting", "webNavigation"],
   "host_permissions": ["<all_urls>"],
